@@ -68,7 +68,7 @@ Typr.js uses the following structure to represent the path:
 * "Q": (X1,Y1,X2,Y2) - quadratic bézier curve from the previous position to X2,Y2, using X1,Y1 as a control point.
 * "C": (X1,Y1,X2,Y2,X3,Y3) - cubic bézier curve from the previous position to X3,Y3, using X1,Y1 and X2,Y2 as control points.
 * "Z": () - draw a line to the first point to finish the outline.
-* "#rrggbb" : () - set the current collor to RGB(rr,gg,bb) (SVG fonts use this)
+* "#rrggbb" : () - set the current color to RGB(rr,gg,bb) (SVG fonts use this)
 * "X": () - fill the current path (SVG fonts use this)
 
 A "raindrop" shape: `{ cmds:["M","L","Q","Z"], crds:[0,0,20,80,0,120,-20,80] }` (2 + 2 + 4 + 0 coordinates). 
